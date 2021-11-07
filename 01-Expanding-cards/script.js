@@ -1,3 +1,4 @@
+// scale 1-5 = 5
 const panels = document.querySelectorAll('.panel')
 
 panels.forEach(panel => {
