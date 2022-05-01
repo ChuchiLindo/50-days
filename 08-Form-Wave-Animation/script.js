@@ -5,7 +5,7 @@ labels.forEach(label => {
     label.innerHTML = label.innerText
     // split into an array splits the letteres into an array
         .split('')
-        // manipluate trun it into an array into some thing else we want a letter with a span arrount it to add a transition 
+        // manipluate turn it into an array into some thing else we want a letter with a span around it to add a transition 
         .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
         // turn it back into a string
         .join('')
