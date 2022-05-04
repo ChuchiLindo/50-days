@@ -5,14 +5,14 @@ jokeBtn.addEventListener('click', generateJoke)
 
 generateJoke()
 
-// USING ASYNC/AWAIT - differnet syntax rather then .then 
+// USING ASYNC/AWAIT
+async function generateJoke() {
   const config = {
     headers: {
       Accept: 'application/json',
     },
   }
-// res = response\
-{
+
   const res = await fetch('https://icanhazdadjoke.com', config)
 
   const data = await res.json()
@@ -21,20 +21,16 @@ generateJoke()
 }
 
 // USING .then()
-
 // function generateJoke() {
-
 //   const config = {
-
-//  header is a object here and the accept is a key with the value 
 //     headers: {
 //       Accept: 'application/json',
-//     }
+//     },
 //   }
 
 //   fetch('https://icanhazdadjoke.com', config)
-//     .then((res) => res.json())     to get the json data
+//     .then((res) => res.json())
 //     .then((data) => {
-//       jokeEl.innerHTML = data.joke   what data it gives us
+//       jokeEl.innerHTML = data.joke
 //     })
 // }
