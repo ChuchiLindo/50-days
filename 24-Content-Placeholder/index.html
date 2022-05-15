@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Content Placeholder</title>
+  </head>
+  <body>
+
+    <!-- everything in &nbsp; is being put in by js so if we look with html and css we see nothing which is why we start with hard codded info to syles-->
+
+    <!-- &nbsp and non breaking space          animation for the lines to show-->
+
+    <!-- &nbsp is actually one of the most frequently used HTML entities. Nbsp stands for non-breaking space, meaning that strings separated with this entity will not be separated and put into separate lines. -->
+
+    <div class="card">
+      <div class="card-header animated-bg" id="header">&nbsp;</div>
+
+      <div class="card-content">
+
+        <h3 class="card-title animated-bg animated-bg-text" id="title">
+          &nbsp;
+        </h3>
+
+        <p class="card-excerpt" id="excerpt">
+          &nbsp;
+          <span class="animated-bg animated-bg-text">&nbsp;</span>
+          <span class="animated-bg animated-bg-text">&nbsp;</span>
+          <span class="animated-bg animated-bg-text">&nbsp;</span>
+        </p>
+        <!-- here some things would at first be hard coded like the img of the author but in js would change to be dynaic and can even use an api to pull data to put in like the picture name and excerpt-->
+        <div class="author">
+          <div class="profile-img animated-bg" id="profile_img">&nbsp;</div>
+          <div class="author-info">
+            <strong class="animated-bg animated-bg-text" id="name"
+              >&nbsp;</strong
+            >
+            <small class="animated-bg animated-bg-text" id="date">&nbsp;</small>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
