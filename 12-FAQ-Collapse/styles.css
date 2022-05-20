@@ -36,6 +36,7 @@ h1 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* this is for the conversation bubbles that is green */
 .faq.active::before,
 .faq.active::after {
   content: '\f075';
@@ -49,6 +50,7 @@ h1 {
   z-index: 0;
 }
 
+/* this is the convo bubble that is blue */
 .faq.active::before {
   color: #3498db;
   top: -10px;
@@ -68,7 +70,7 @@ h1 {
 .faq.active .faq-text {
   display: block;
 }
-
+/* this is the buttons */
 .faq-toggle {
   background-color: transparent;
   border: 0;
