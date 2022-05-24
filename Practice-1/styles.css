@@ -50,7 +50,7 @@ a:hover {
     border-radius:25px;
 }
 
-.fa {
+.fa , .fa-x {
     display: none;
 }
 
@@ -61,19 +61,34 @@ a:hover {
     background-color: black;
   }
 
+/* make active nav for mobile */
+/*  this all happens when its clicked
+- change ul display to block 
+   - width of nav to 100%
+   -backgound color
+   -padding maybe of thenav links
+
+   look at nav in portfolio i think that uses js for the ham
+*/
+
+
+
+
+
+
 /* link states that they are in 
 -link , visited, hover, active 
 */
 /* When the screen is less than 860 pixels wide  hide all the links and search*/
 @media screen and (max-width: 860px) {
     ul a{display: none;}
-    input{display: none;}
+    /* input{display: none;} */
     .sticky{display: none;}
 
     .fa{
         display: block;
         position: absolute;
-        right: 100px;
+        right: 50px;
         top: 25px;
         font-size: 25px;
         color: white;
